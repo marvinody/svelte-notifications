@@ -1,5 +1,5 @@
 {
-  "name": "@beyonk/svelte-notifications",
+  "name": "@marvinody/svelte-notifications",
   "svelte": "src/index.js",
   "module": "index.mjs",
   "main": "index.js",
@@ -19,7 +19,7 @@
     "svelte": "^3.12.1",
     "typescript": "^3.5.2"
   },
-  "repository": "github:beyonk-adventures/svelte-notifications",
+  "repository": "github:marvinody/svelte-notifications",
   "keywords": [
     "svelte",
     "notifications",
