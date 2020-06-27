@@ -19,7 +19,7 @@
     "svelte": "^3.12.1",
     "typescript": "^3.5.2"
   },
-  "repository": "github:marvinody/svelte-notifications",
+  "repository": "github:marvinody/sveltoaste",
   "keywords": [
     "svelte",
     "notifications",

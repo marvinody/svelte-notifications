@@ -1,5 +1,6 @@
 <p align="center">
   <img width="186" height="90" src="https://user-images.githubusercontent.com/218949/44782765-377e7c80-ab80-11e8-9dd8-fce0e37c235b.png" alt="Beyonk" />
+  Forked by marvinody
 </p>
 
 ## Svelte Notifications
@@ -8,8 +9,8 @@
 
 Svelte Notifications component
 
-* v3 compatible
-* uses stores for completely hassle free operation
+- v3 compatible
+- uses stores for completely hassle free operation
 
 ## Demo
 
@@ -18,7 +19,7 @@ A [Demo of this component](https://svelte.dev/repl/dd506c546df84c1994a5ae9928ad2
 ## Usage
 
 ```bash
-npm i -D @beyonk/svelte-notifications
+npm i -D sveltoaste
 ```
 
 ```jsx
@@ -27,7 +28,7 @@ npm i -D @beyonk/svelte-notifications
 <button on:click={someFunction}>Show message</button>
 
 <script>
-import { NotificationDisplay, notifier } from '@beyonk/svelte-notifications'
+import { NotificationDisplay, notifier } from 'sveltoaste'
 
 function someFunction () {
   notifier.success('Notifications work!')
@@ -40,11 +41,11 @@ function someFunction () {
 You can call multiple types of notification:
 
 ```js
-notifier.show('danger', message, displayTimeMs)
+notifier.show("danger", message, displayTimeMs);
 notifier.danger(message, displayTimeMs),
-notifier.warning(message, displayTimeMs),
-notifier.info(message, displayTimeMs),
-notifier.success(message, displayTimeMs)
+  notifier.warning(message, displayTimeMs),
+  notifier.info(message, displayTimeMs),
+  notifier.success(message, displayTimeMs);
 ```
 
 ### Notification themes
@@ -57,7 +58,7 @@ You can customise the themes:
 <button on:click={someFunction}>Show message</button>
 
 <script>
-import { NotificationDisplay, notifier } from '@beyonk/svelte-notifications'
+import { NotificationDisplay, notifier } from 'sveltoaste'
 
 let themes = { // These are the defaults
   danger: '#bb2124',
@@ -81,7 +82,7 @@ function someFunction () {
 <button on:click={someFunction}>Show message</button>
 
 <script>
-import { NotificationDisplay, notifier } from '@beyonk/svelte-notifications'
+import { NotificationDisplay, notifier } from 'sveltoaste'
 
 let themes = {
   myColour: '#ff00bb'
@@ -103,7 +104,7 @@ You can set a default timeout:
 <button on:click={someFunction}>Show message</button>
 
 <script>
-import { NotificationDisplay, notifier } from '@beyonk/svelte-notifications'
+import { NotificationDisplay, notifier } from 'sveltoaste'
 
 let timeout = 3000 // The default
 
@@ -123,7 +124,7 @@ You can set a timeout per message
 <button on:click={someFunction}>Show message</button>
 
 <script>
-import { NotificationDisplay, notifier } from '@beyonk/svelte-notifications'
+import { NotificationDisplay, notifier } from 'sveltoaste'
 
 function someFunction () {
   notifier.success('Notifications work!', 5000) // built in theme
@@ -134,5 +135,6 @@ function someFunction () {
 
 ## Credits
 
-* Original code by [Antony Jones](https://github.com/antony)
-* Animation and performance improvements by jg.
+- Original code by [Antony Jones](https://github.com/antony)
+- Animation and performance improvements by jg.
+- [marvinody](https://github.com/marvinody) - added close to the button to allow user to close before time expiration
